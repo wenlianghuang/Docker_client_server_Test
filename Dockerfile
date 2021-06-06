@@ -14,7 +14,7 @@ RUN npm run build
 FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 COPY --from=builder /main ./
-COPY --from=node_builder /build ./web
+COPY --from=node_builder /build ./testweb
 RUN chmod +x ./main
 EXPOSE 8080
 CMD ./main
