@@ -1,5 +1,5 @@
 build:
   docker:
-    testweb: Dockerfile
+    web: Dockerfile
     worker:
        dockerfile: Dockerfile
